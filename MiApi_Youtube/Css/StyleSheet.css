@@ -1,0 +1,119 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #0f0f0f;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #ff0000; /* YouTube's red */
+    margin-top: 20px;
+}
+
+/* Search Box */
+div {
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"], .aspNet-TextBox {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button, .aspNet-Button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+    button:hover, .aspNet-Button:hover {
+        background-color: #e60000;
+    }
+
+/* GridView Styling */
+asp\:GridView {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    asp\:GridView th {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+    }
+
+    asp\:GridView td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+img {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+/* Section Titles */
+h3 {
+    color: #333;
+    margin-top: 30px;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 10px;
+}
+
+/* Comments Styling */
+.comment-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .comment-container img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .comment-container p {
+        margin: 0;
+    }
+
+.comment-author {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    input[type="text"], .aspNet-TextBox {
+        width: 100%;
+    }
+
+    img {
+        width: 100px;
+    }
+}
